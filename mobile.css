@@ -1,0 +1,184 @@
+@media only screen and (max-width: 768px) {
+
+    
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .logo-text {
+        font-size: 1.3em;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .nav-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .lang-flag {
+        font-size: 1.3rem;
+    }
+
+    
+    .main-content {
+        display: block;
+        padding: 10px;
+    }
+
+    .search-section {
+        padding: 10px;
+    }
+
+    .search-section input[type="text"] {
+        display: flexbox;
+        width: 90%;
+    }
+
+    .search-section button {
+        width: 100%;
+        padding: 12px 0;
+    }
+
+    .globe-section {
+        min-width: 250px;
+        min-height: 250px;
+    }
+
+    .disasters-list {
+        padding: 10px;
+    }
+
+    .disaster {
+        padding: 10px;
+    }
+
+    .disaster-title {
+        font-size: 1.1em;
+    }
+
+    .disaster a {
+        font-size: 1em;
+    }
+
+    .badge {
+        font-size: 0.8em;
+    }
+
+    .disaster-label {
+        font-size: 1em;
+        padding: 8px 18px;
+    }
+
+    .popup-container {
+        padding: 0 15px;
+    }
+
+    .popup-content {
+        width: 100%;
+        max-width: 350px;
+        padding: 20px;
+    }
+
+    .auth-form input {
+        padding: 12px;
+    }
+
+    .auth-form button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .close-btn {
+        font-size: 22px;
+        top: 15px;
+        right: 15px;
+    }
+
+    .logo-icon {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .header {
+        padding: 10px;
+    }
+
+    .logo-text {
+        font-size: 1.1em;
+    }
+
+    .nav {
+        gap: 10px;
+    }
+
+    .nav-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .lang-flag {
+        font-size: 1.1rem;
+    }
+
+    .search-section input[type="text"] {
+        padding: 10px;
+    }
+
+    .search-section button {
+        padding: 10px 0;
+    }
+
+    .globe-section {
+        width: 100%;
+        min-height: 250px;
+    }
+
+    
+    .disasters-list {
+        padding: 8px;
+    }
+
+    .disaster {
+        padding: 8px;
+    }
+
+    .badge {
+        font-size: 0.75em;
+    }
+
+    .disaster-title {
+        font-size: 1em;
+    }
+
+    .disaster-label {
+        font-size: 1em;
+        padding: 6px 16px;
+    }
+
+ 
+    .popup-content {
+        padding: 15px;
+    }
+
+    .auth-form input {
+        padding: 10px;
+    }
+
+    .auth-form button {
+        padding: 12px 0;
+    }
+
+    .close-btn {
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Watch</title>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#" class="nav-link">
+
+                <img src="icons/world.png" alt="logo" class="nav-icon">
+           
+            <span class="logo-text">DISASTER WATCH</span> </a>
+        </div>
+        <nav class="nav">
+            <a href="#" class="nav-link">
+                <img src="icons/home_1.png" alt="home" class="nav-icon">
+            </a>
+            <a href="#" class="nav-link" id="user-icon">
+                <img src="icons/user.png" alt="sign" class="nav-icon">
+            </a>
+            <!-- <a href="#" class="nav-link">Меню</a> -->
+           <!--<span class="lang-flag">🇧🇬</span>-->
+<a href="#" class="nav-link" id="lang">
+    <img src="icons/language.png" alt="lang" class="nav-icon">
+</a>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="search-section">
+            <form>
+                <label for="search">Търси бедствия по ключова дума...</label>
+                <input type="text" id="search" name="search" placeholder="Търси бедствия">
+                <button type="submit">Търси</button>
+            </form>
+        </section>
+
+        <section class="globe-section">
+           <canvas id="globe"></canvas>
+            </div>
+        </section>
+
+        <aside class="disasters-list">
+            <h2>Актуални бедствия</h2>
+            <div class="disaster critical">
+                <span class="badge critical">КРИТИЧНО</span>
+                <div class="disaster-title">🌊 Вълна от наводнения</div>
+                <div class="disaster-location">Тихоокеански регион</div>
+                <a href="#">Научи повече</a>
+            </div>
+            <div class="disaster serious">
+                <span class="badge serious">СЕРИОЗНО</span>
+                <div class="disaster-title">⚡Силна буря в Италия</div>
+                <div class="disaster-location">Северна провинция</div>
+                <a href="#">Научи повече</a>
+            </div>
+            <div class="disaster moderate">
+                <span class="badge moderate">УМЕРЕНО</span>
+                <div class="disaster-title">🌋 Сеизмична активност</div>
+                <div class="disaster-location">Турция</div>
+                <a href="#">Научи повече</a>
+            </div>
+        </aside>
+    </main>
+    <div id="registration-popup" class="popup-container">
+        <div class="popup-content">
+            <span id="close-popup" class="close-btn">×</span>
+            <h2>Регистрация / Вход</h2>
+            <form class="auth-form">
+                <label for="email">Имейл:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Парола:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Вход</button>
+                <p>Нямаш акаунт? <a href="#">Регистрирай се</a></p>
+            </form>
+        </div>
+    </div>
+<script src="planet.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>

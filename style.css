@@ -1,0 +1,269 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color:#0A1224; 
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e293b; 
+    padding: 20px 30px;
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.logo-text {
+    letter-spacing: 2.5px;
+}
+
+.logo{
+display: flex;
+padding-inline: 5px;
+}
+
+.logo-icon {
+    margin-right: 0.7em;
+}
+
+.logo-text {
+    letter-spacing: 2px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    vertical-align: middle;
+    color: whitesmoke;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #38bdf8;
+}
+
+.lang-flag {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.search-section {
+    background-color: #121829;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.search-section label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.search-section input[type="text"] {
+    width: 80%;
+    padding: 12px 20px;
+    margin-bottom: 0.5em;
+    border: none;
+    border-radius: 22px;
+    background-color:  #1E263F;
+    color:#E0E8FF;
+}
+
+.search-section button {
+    background-color: #2176FF;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+.search-row {
+    display: flex;
+    gap: 12px;
+}
+
+.globe-section {
+    background-color: #E53935;
+    color:#FFF;
+    font-size: 1.1em;
+    border-radius: 24px;
+    padding: 10px 24px;
+    text-align: center;
+}
+
+.globe-placeholder {
+    width: 100%;
+    height: 300px; 
+    background-color: #333;
+    border-radius: 8px;
+    position: relative;
+}
+
+.disaster-marker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: red;
+}
+
+.disasters-list {
+    background-color:#121829;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.disaster {
+    margin-bottom: 1em;
+    padding: 12px;
+    border-radius: 16px;
+}
+
+.disaster-title {
+    font-weight: bold;
+    font-size: 1.05em;
+}
+
+.disaster a{
+    color: #5ec6fa;
+}
+
+.badge {
+    padding: 0.3em 0.5em;
+    border-radius: 18px;
+    font-size: 0.9em;
+    margin-right: 0.5em;
+}
+
+.badge.critical {
+    background-color: #f44336;
+}
+
+.badge.serious {
+    background-color: #ff9800;
+}
+
+.badge.moderate {
+    background-color: #4caf50;
+}
+.globe-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border-radius: 20px;
+    position: relative;
+    min-width: 350px;
+    min-height: 350px;
+}
+#globe {
+    width: 350px;
+    height: 350px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #000a;
+    display: block;
+}
+.disaster-label {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #e53935;
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 24px;
+    font-weight: bold;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 8px #0006;
+}
+
+.popup-container {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+}
+
+
+.popup-content {
+    background-color: #3c4b6d;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #0c0404;
+}
+
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.auth-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.auth-form button {
+    background-color: #38bdf8;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-form button:hover {
+    background-color: #0ea5e9;
+}
+.popup-content a{
+    color: #2176FF;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
