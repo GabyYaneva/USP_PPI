@@ -7,7 +7,7 @@ renderer.setSize(350, 350);
 
 
 const geometry = new THREE.SphereGeometry(2, 64, 64);
-const texture = new THREE.TextureLoader().load('C:\Users\USER\Documents\USP_PPI\Image\earthmap1k.jpg');
+const texture = new THREE.TextureLoader().load('./Image/earthmap1k.jpg');
 const material = new THREE.MeshPhongMaterial({ map: texture });
 const globe = new THREE.Mesh(geometry, material);
 scene.add(globe);
