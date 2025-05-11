@@ -42,7 +42,6 @@
 
         <section class="globe-section">
            <canvas id="globe"></canvas>
-            </div>
         </section>
 
         <aside class="disasters-list">
@@ -67,11 +66,12 @@
             </div>
         </aside>
     </main>
-    <div id="registration-popup" class="popup-container">
+  <div id="registration-popup" class="popup-container">
         <div class="popup-content">
             <span id="close-popup" class="close-btn">×</span>
-            <h2>Регистрация / Вход</h2>
-            <form class="auth-form">
+
+            <form id="login-form" class="auth-form">
+                <h2>Вход</h2>
                 <label for="email">Имейл:</label>
                 <input type="email" id="email" name="email" required>
 
@@ -79,7 +79,26 @@
                 <input type="password" id="password" name="password" required>
 
                 <button type="submit">Вход</button>
-                <p>Нямаш акаунт? <a href="#">Регистрирай се</a></p>
+                <p>Нямаш акаунт? <a href="#" id="register-link">Регистрация</a></p>
+            </form>
+
+            <form id="register-form" class="register-form" style="display: none;">
+                <h2>Регистрация</h2>
+                <label for="register-email">Имейл:</label>
+                <input type="email" id="register-email" name="register-email" required>
+
+                <label for="register-password">Парола:</label>
+                <input type="password" id="register-password" name="register-password" required>
+
+                <label for="confirm-password">Потвърди паролата:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <button type="submit">Регистрация</button>
+                <p>Имаш акаунт? <a href="#" id="login-link">Вход</a></p>
+            </form>
+        </div>
+    </div>
+
             </form>
         </div>
     </div>
